@@ -15,7 +15,6 @@ handleRefresh = function(data) {
     }
 
     window.addEventListener("message", function receiveMessage(event) {
-        console.log(JSON.parse(event.data)['async-auth'])
           handleRefresh({msg_text: JSON.parse(event.data)['async-auth']});
       },false);
 
