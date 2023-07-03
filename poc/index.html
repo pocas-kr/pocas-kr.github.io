@@ -1,14 +1,12 @@
 <script>
 handleRefresh = function(data) {
       var self = this;
-      console.log(data.msg_text)
+
       var msg = /.*status=([^&]*)(&.*)?/.exec(data.msg_text);
       var url = /.*url=([^&]*)(&.*)?/.exec(data.msg_text);
       var idkey = /.*idkey=([^&]*)(&.*)?/.exec(data.msg_text);
       var captcha_url = /.*captcha_url=([^&]*)(&.*)?/.exec(data.msg_text);
       msg = msg && msg[1];
-
-      console.log(msg)
 
       if (msg === 'other') {
           url = url && url[1];
@@ -17,7 +15,6 @@ handleRefresh = function(data) {
     }
 
     window.addEventListener("message", function receiveMessage(event) {
-
         console.log(JSON.parse(event.data)['async-auth'])
           handleRefresh({msg_text: JSON.parse(event.data)['async-auth']});
       },false);
