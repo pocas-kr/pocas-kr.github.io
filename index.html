@@ -1,5 +1,6 @@
 
 
+
 		<!DOCTYPE html>
 		<html lang="en">
 			<head>
@@ -11,17 +12,17 @@
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 																				<meta property="og:type" content="article">
 								<meta itemprop="name" content="Pocas">
-				<meta property="og:title" content="Pocas">													<link rel="preconnect" href="//cdn.frame.im">
+				<meta property="og:title" content="Pocas">													<link rel="preconnect" href="https://cdn.frame.im">
 		<link rel="preconnect" href="//frame.im">
-		<link rel="preload" as="style" type="text/css" href="//cdn.frame.im/f/NotoSans/" />
-		<link rel="preload" as="style" type="text/css" href="//cdn.frame.im/f/NotoSansKR/" />
-		<link rel="preload" as="style" type="text/css" href="//frame.im/2/css" />
-		<link rel="stylesheet" type="text/css" href="//cdn.frame.im/f/NotoSans/" />
-		<link rel="stylesheet" type="text/css" href="//cdn.frame.im/f/NotoSansKR/" />
-		<link rel="stylesheet" type="text/css" href="//frame.im/2/css" />
-		<script src="//cdn.frame.im/s/pjax-api/3.33.1"></script>
-		<script type="text/javascript" src="//frame.im/2/js"></script>
-		<script type="text/javascript" src="//0415.frame.im/_common/basic.js" defer></script>
+		<link rel="preload" as="style" type="text/css" href="https://cdn.frame.im/f/NotoSans/" />
+		<link rel="preload" as="style" type="text/css" href="https://cdn.frame.im/f/NotoSansKR/" />
+		<link rel="preload" as="style" type="text/css" href="https://frame.im/2/css" />
+		<link rel="stylesheet" type="text/css" href="https://cdn.frame.im/f/NotoSans/" />
+		<link rel="stylesheet" type="text/css" href="https://cdn.frame.im/f/NotoSansKR/" />
+		<link rel="stylesheet" type="text/css" href="https://frame.im/2/css" />
+		<script src="https://cdn.frame.im/s/pjax-api/3.33.1"></script>
+		<script type="text/javascript" src="https://frame.im/2/js"></script>
+		<script type="text/javascript" src="https://0415.frame.im/_common/basic.js" defer></script>
 								<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 		<style>
 			@media print {
@@ -29,22 +30,32 @@
 					font-size: .78125em;
 				}
 			}
+      a {
+        color: #7b68ee;
+      }
 			:root {
 				--color-text: 0, 0%, 25%;
-				--color-background: 0, 0%, 100%;
 				--color-primary: 170, 100%, 32%;
 				--content-size: 10in;
 				--padding-vertical: 2em;
 			}
+      body {
+    font: 1.15em "Overpass Mono",monospace;
+    font-variant-ligatures: no-common-ligatures;
+    color: #fff;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    background-color: #222
+}
 
 			h1, h2 > *:first-child, h3 > *:nth-child(2) {
-				color: #2e2c2c;
+				color: #ffffff;
 			}
 			h1, h2, h3 > *:first-child, x-title {
 				font-weight: bold;
 			}
 			span {
-				color: rgb(19, 18, 18);
+				color: rgb(219, 215, 215);
 			}
 			h1, h2 {
 				margin-bottom: var(--medium);
@@ -55,7 +66,7 @@
 			h3 {
 				margin-bottom: var(--small);
 				margin-top: 1em;
-				color: rgb(20, 19, 19);
+				color: rgb(221, 217, 217);
 			}
 			h3 > *:nth-child(2), h4 > *:nth-child(2) {
 				font-style: italic;
@@ -98,7 +109,7 @@
 			}
 			
 			li {
-				color: rgb(25, 24, 24);
+				color: rgb(255, 255, 255);
 				line-height: var(--d125);
 				margin: var(--small) 0;
 				font-size: .9em;
@@ -178,7 +189,7 @@ if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
 				</h4>
 				<ul>
 					<li>I am working only at home</li>
-					<li><a style="color:rgb(25, 24, 24);" href="https://en.wikipedia.org/wiki/Code_audit">Source code auditing</a> and Architecture analysis</li>
+					<li><a  href="https://en.wikipedia.org/wiki/Code_audit">Source code auditing</a> and Architecture analysis</li>
 					<li>Research the security status of various search engine/web services</li>
 					<li>Found 0-Day vulnerabilities in various CMS and NPM or desktop apps</li>
 				</ul>
@@ -221,7 +232,7 @@ if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
 					<span>Apr, 2020 - Present</span>
 				</h4>
 				<ul>
-					<li>Participate in CTF at <a style="color:rgb(25, 24, 24);" href="https://teamst4rt.github.io/">ST4RT</a> and <a style="color:rgb(25, 24, 24);" href="https://ctftime.org/team/154080">icypete</a> but i participate alone often :)</li>
+					<li>Participate in CTF at <a href="https://teamst4rt.github.io/">ST4RT</a> and <a href="https://ctftime.org/team/154080">icypete</a> but i participate alone often :)</li>
 				</ul>
 				<h3>
 					<span>Dreamhack Challenge Author</span>
@@ -229,9 +240,9 @@ if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
 				</h3>
 				<ul>
 					<!--<li>easypress (express@4.18.2/RCE via File Extension Confusing) at <a href='https://dreamhack.io/wargame/challenges/707/'>Dreamhack#707</a></li>	-->				
-					<li>easyxss-v2 (XSS, SSRF, IDOR, URL Parser Confusing) at <a style="color:rgb(25, 24, 24);" href='https://dreamhack.io/wargame/challenges/451/'>Dreamhack#451</a></li>
-					<li>easyxss (XSS, Hostname Bypass) at <a style="color:rgb(25, 24, 24);" href='https://dreamhack.io/wargame/challenges/273/'>Dreamhack#273</a></li>
-					<li>Environment Pollution (Prototype Pollution, Strtoupper) at <a style="color:rgb(25, 24, 24);" href='https://dreamhack.io/wargame/challenges/205/'>Dreamhack#205</a></li>
+					<li>easyxss-v2 (XSS, SSRF, IDOR, URL Parser Confusing) at <a href='https://dreamhack.io/wargame/challenges/451/'>Dreamhack#451</a></li>
+					<li>easyxss (XSS, Hostname Bypass) at <a href='https://dreamhack.io/wargame/challenges/273/'>Dreamhack#273</a></li>
+					<li>Environment Pollution (Prototype Pollution, Strtoupper) at <a href='https://dreamhack.io/wargame/challenges/205/'>Dreamhack#205</a></li>
 				</ul>
                 <h3>
 					<span>URLParserCon</span>
@@ -258,22 +269,22 @@ if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
 					<span></span>
 				</h3>
 				<ul>
-          <li><a style="color:rgb(25, 24, 24);" href="https://gist.github.com/P0cas/1eff60bd3653f5739f041ea34e152f62">Remote Code Execution in NASA (1-Day Exploit)</a></li>
-					<li><a style="color:rgb(25, 24, 24);" href="https://blog.pocas.kr/2022/02/15/2022-02-19-RCE-in-NASA/">Remote Code Execution in NASA (0-Day Exploit)</a></li>
+          <li><a href="https://gist.github.com/P0cas/1eff60bd3653f5739f041ea34e152f62">Remote Code Execution in NASA (1-Day Exploit)</a></li>
+					<li><a href="https://blog.pocas.kr/2022/02/15/2022-02-19-RCE-in-NASA/">Remote Code Execution in NASA (0-Day Exploit)</a></li>
 				</ul>
 				<h3>
 					<span>Microsoft Bug Bounty</span>
 					<span></span>
 				</h3>
 				<ul>
-					<li><a style="color:rgb(25, 24, 24);" href="https://msrc.microsoft.com/submission/VULN-064235">Just XSS Sanitizer flaw - VULN-064235</a></li>
+					<li><a href="https://msrc.microsoft.com/submission/VULN-064235">Just XSS Sanitizer flaw - VULN-064235</a></li>
 				</ul>
 				<h3>
 					<span>Dreamhack Bug Bounty</span>
 					<span>500 USD</span>
 				</h3>
 				<ul>
-					<li><a style="color:rgb(25, 24, 24);" href="https://patchday.io/reports/93">Leak all write ups via IDOR in dreamhack.io</a></li>
+					<li><a href="https://patchday.io/reports/93">Leak all write ups via IDOR in dreamhack.io</a></li>
 				</ul>
                 <h3>
 					<span>CVE Hunting</span>
