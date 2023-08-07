@@ -1,23 +1,5 @@
-<script>
-handleRefresh = function(data) {
-      var self = this;
-
-      var msg = /.*status=([^&]*)(&.*)?/.exec(data.msg_text);
-      var url = /.*url=([^&]*)(&.*)?/.exec(data.msg_text);
-      var idkey = /.*idkey=([^&]*)(&.*)?/.exec(data.msg_text);
-      var captcha_url = /.*captcha_url=([^&]*)(&.*)?/.exec(data.msg_text);
-      msg = msg && msg[1];
-
-      if (msg === 'other') {
-          url = url && url[1];
-          top.location = decodeURIComponent(url);
-      }
-    }
-
-    window.addEventListener("message", function receiveMessage(event) {
-          handleRefresh({msg_text: JSON.parse(event.data)['async-auth']});
-      },false);
-
-</script>
-
-<body>test</body>
+<body>
+        <h1>Hackerone PoC</h1>
+         <svg height="24" width="24">Image Format</svg>
+        <script>alert(1)</script>
+</body>
